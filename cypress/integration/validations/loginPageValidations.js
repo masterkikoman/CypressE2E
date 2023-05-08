@@ -1,10 +1,22 @@
 import LogInPageObjects from "../pageObjects/logInPageObjects.js";
 class LogInPageValidations {
-  signUpText = new LogInPageObjects();
+  validationText = new LogInPageObjects();
   newUserSignUpTextValidation() {
-    this.signUpText
+    this.validationText
       .getNewUserSignupText()
       .should("have.text", "New User Signup!");
+  }
+
+  logInTextValidation() {
+    this.validationText
+      .getLogInText()
+      .should("have.text", "Login to your account");
+  }
+
+  errorMessageTextValidation() {
+    this.validationText
+      .getErrorMessageText()
+      .should("have.text", "Your email or password is incorrect!");
   }
 }
 export default LogInPageValidations;

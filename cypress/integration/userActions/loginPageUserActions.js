@@ -9,7 +9,7 @@ class LogInPageUserActions {
       this.logInPageLocator.getSignUpEmailTextField().type(value);
     } else if (textfield.equalsIgnoreCase("Username")) {
       this.logInPageLocator.getSignUpNameTextField().type(value);
-    } else if (textfield.contains("Log in")) {
+    } else if (textfield.equalsIgnoreCase("Log in")) {
       this.logInPageLocator.getLogInEmailAddressTextField().type(value);
     } else {
       this.logInPageLocator.getPasswordTextField().type(value);

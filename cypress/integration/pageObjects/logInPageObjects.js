@@ -26,5 +26,13 @@ class LogInPageObjects {
   getNewUserSignupText() {
     return cy.get(".signup-form > h2");
   }
+
+  getLogInText() {
+    return cy.get(".login-form > h2");
+  }
+
+  getErrorMessageText() {
+    return cy.get(".login-form > form > p");
+  }
 }
 export default LogInPageObjects;
