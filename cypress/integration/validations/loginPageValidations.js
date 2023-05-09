@@ -18,5 +18,11 @@ class LogInPageValidations {
       .getErrorMessageText()
       .should("have.text", "Your email or password is incorrect!");
   }
+
+  signUpMessageTextValidation() {
+    this.validationText
+      .getSignUpErrorMessage()
+      .should("have.text", "Email Address already exist!");
+  }
 }
 export default LogInPageValidations;
