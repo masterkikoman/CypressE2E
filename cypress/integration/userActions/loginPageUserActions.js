@@ -23,5 +23,9 @@ class LogInPageUserActions {
       this.logInPageLocator.getLogInButton().click();
     }
   }
+
+  clickLogOutButton() {
+    this.logInPageLocator.getLogoutButton().click();
+  }
 }
 export default LogInPageUserActions;

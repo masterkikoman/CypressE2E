@@ -8,5 +8,9 @@ class HomePageValidations {
   getUserName(value) {
     this.homePageValidations.getUserName().should("have.text", value);
   }
+
+  getLoginUrl() {
+    cy.url().should("eq", "https://automationexercise.com/login");
+  }
 }
 export default HomePageValidations;

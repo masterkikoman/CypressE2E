@@ -38,5 +38,9 @@ class LogInPageObjects {
   getSignUpErrorMessage() {
     return cy.get(".signup-form > form > p");
   }
+
+  getLogoutButton() {
+    return cy.get(".row > :nth-child(2) > div > ul > :nth-child(4) > a");
+  }
 }
 export default LogInPageObjects;
