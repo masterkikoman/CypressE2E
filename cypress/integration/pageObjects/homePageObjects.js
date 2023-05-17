@@ -10,5 +10,9 @@ class HomePageObjects {
   getDeleteAccount() {
     return cy.get('[href="/delete_account"]');
   }
+
+  getContactUsButton(){
+    return cy.get('[href="/contact_us"]')
+  }
 }
 export default HomePageObjects;

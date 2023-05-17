@@ -8,5 +8,9 @@ class HomePageUserActions {
   clickDeleteAccount() {
     this.homepageActions.getDeleteAccount().click();
   }
+
+  clickContactUs() {
+    this.homepageActions.getContactUsButton().click();
+  }
 }
 export default HomePageUserActions;
