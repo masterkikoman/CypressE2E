@@ -12,5 +12,9 @@ class HomePageUserActions {
   clickContactUs() {
     this.homepageActions.getContactUsButton().click();
   }
+
+  clickProducts() {
+    this.homepageActions.getProductsButton().click();
+  }
 }
 export default HomePageUserActions;

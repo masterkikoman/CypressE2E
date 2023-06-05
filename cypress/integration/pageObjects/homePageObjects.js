@@ -14,5 +14,9 @@ class HomePageObjects {
   getContactUsButton(){
     return cy.get('[href="/contact_us"]')
   }
+
+  getProductsButton(){
+    return cy.get('[href="/products"]')
+  }
 }
 export default HomePageObjects;
